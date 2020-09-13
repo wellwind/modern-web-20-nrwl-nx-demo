@@ -239,6 +239,39 @@
           }
         }
       }
+    },
+    "todos-todos-data-access": {
+      "projectType": "library",
+      "root": "libs/todos/todos-data-access",
+      "sourceRoot": "libs/todos/todos-data-access/src",
+      "prefix": "modern-web-nx-demo",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todos/todos-data-access/tsconfig.lib.json",
+              "libs/todos/todos-data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/todos/todos-data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todos/todos-data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

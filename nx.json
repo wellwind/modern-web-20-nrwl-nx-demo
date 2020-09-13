@@ -35,6 +35,9 @@
     "dashboard-e2e": {
       "tags": [],
       "implicitDependencies": ["dashboard"]
+    },
+    "todos-todos-data-access": {
+      "tags": []
     }
   }
 }
