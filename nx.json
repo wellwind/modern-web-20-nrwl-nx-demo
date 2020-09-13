@@ -28,6 +28,13 @@
     "todos-e2e": {
       "tags": [],
       "implicitDependencies": ["todos"]
+    },
+    "dashboard": {
+      "tags": []
+    },
+    "dashboard-e2e": {
+      "tags": [],
+      "implicitDependencies": ["dashboard"]
     }
   }
 }
