@@ -29,3 +29,9 @@
 ```
 
 再次執行指令即可通過。
+
+## Format
+
+`todo-list.component.ts` 內程式碼排版有問題，可透過指令 `npm run nx format:check` 查出問題。
+
+也可透過 `npm run nx format:write` 直接修正可以修正的排版問題。
