@@ -18,6 +18,9 @@
     "paths": {
       "@modern-web-nx-demo/todos/todos-data-access": [
         "libs/todos/todos-data-access/src/index.ts"
+      ],
+      "@modern-web-nx-demo/dashboard/dashboard-data-access": [
+        "libs/dashboard/dashboard-data-access/src/index.ts"
       ]
     }
   },

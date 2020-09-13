@@ -38,6 +38,9 @@
     },
     "todos-todos-data-access": {
       "tags": []
+    },
+    "dashboard-dashboard-data-access": {
+      "tags": []
     }
   }
 }

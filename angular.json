@@ -272,6 +272,39 @@
           "style": "scss"
         }
       }
+    },
+    "dashboard-dashboard-data-access": {
+      "projectType": "library",
+      "root": "libs/dashboard/dashboard-data-access",
+      "sourceRoot": "libs/dashboard/dashboard-data-access/src",
+      "prefix": "modern-web-nx-demo",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/dashboard/dashboard-data-access/tsconfig.lib.json",
+              "libs/dashboard/dashboard-data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/dashboard/dashboard-data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/dashboard/dashboard-data-access/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
