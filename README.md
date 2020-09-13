@@ -51,7 +51,7 @@ npm run nx affected:dep-graph -- --base=HEAD~1 --head=HEAD
 `tools/schematics/base-file/*` 下面是一個 Schematics 程式碼產生器。可以使用以下指令建立：
 
 ```
-generate @nrwl/workspace:workspace-schematic base-file
+npm run nx generate @nrwl/workspace:workspace-schematic base-file
 ```
 
 裡面的 `index.ts` 是實際建立程式碼骨架的邏輯。
@@ -61,3 +61,19 @@ generate @nrwl/workspace:workspace-schematic base-file
 ```
  npm run nx workspace-schematic base-file [name]
 ```
+
+## Computation Caching
+
+先執行一個 Nx 相關指令，例如：
+
+```
+npm run nx build
+```
+
+執行完成後 Nx 會根據目前的檔案內容產生一個 hash，並記錄輸出結果。
+
+在檔案沒有異動時，再次執行指令，將會看到 `Cached Output` 的文字，代表內容是從 cache 抓出來的。
+
+團隊開發時，可設定 `nx.json` 的 `tasksRunnerOptions.default.options.cacheDirectory` 指定到一個共用的網路磁碟，加快指令執行的時間。
+
+或是將 cache 內容放到 [Nx Cloud](https://nx.app/) 上供團隊共用。
