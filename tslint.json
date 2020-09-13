@@ -56,11 +56,14 @@
     "nx-enforce-module-boundaries": [
       true,
       {
-        "enforceBuildableLibDependency": true,
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": ["type:ui"]
+          },
+          {
+            "sourceTag":"*",
             "onlyDependOnLibsWithTags": ["*"]
           }
         ]

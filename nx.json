@@ -23,27 +23,27 @@
   },
   "projects": {
     "todos": {
-      "tags": []
+      "tags": ["scope:todos"]
     },
     "todos-e2e": {
       "tags": [],
       "implicitDependencies": ["todos"]
     },
     "dashboard": {
-      "tags": []
+      "tags": ["scope:dashboard"]
     },
     "dashboard-e2e": {
       "tags": [],
       "implicitDependencies": ["dashboard"]
     },
     "todos-todos-data-access": {
-      "tags": []
+      "tags": ["scope:todos", "type:data-access"]
     },
     "dashboard-dashboard-data-access": {
-      "tags": []
+      "tags": ["scope:dashboard","type:data-access"]
     },
     "todos-todos-ui": {
-      "tags": []
+      "tags": ["scope:todos", "type:ui"]
     }
   }
 }

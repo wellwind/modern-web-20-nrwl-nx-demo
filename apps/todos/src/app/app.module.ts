@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -14,7 +12,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     RouterModule.forRoot([], { initialNavigation: 'enabled' }),
     BrowserAnimationsModule,
-    TodosTodosUiModule
+    TodosTodosUiModule,
+    TodosTodosDataAccessModule
   ],
   providers: [],
   bootstrap: [AppComponent],

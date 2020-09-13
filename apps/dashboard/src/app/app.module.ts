@@ -1,13 +1,13 @@
+import { NgModule } from '@angular/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { TodosTodosDataAccessModule } from '@modern-web-nx-demo/todos/todos-data-access';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
+import { DashboardDashboardDataAccessModule } from '@modern-web-nx-demo/dashboard/dashboard-data-access';
 import { TodosTodosUiModule } from '@modern-web-nx-demo/todos/todos-ui';
 
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterModule.forRoot([], { initialNavigation: 'enabled' }),
     BrowserAnimationsModule,
     TodosTodosUiModule,
-    TodosTodosDataAccessModule,
+    DashboardDashboardDataAccessModule,
     MatFormFieldModule,
     MatInputModule
   ],
