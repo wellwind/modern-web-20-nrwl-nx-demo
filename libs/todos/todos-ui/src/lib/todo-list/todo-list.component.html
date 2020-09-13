@@ -1,0 +1,9 @@
+<mat-list *ngIf="todoList">
+  <mat-list-item *ngFor="let item of todoList">
+    <mat-checkbox [checked]="item.done" (click)="emitTodoItemClick(item)">
+      <span [class.done]="item.done">
+        {{ item.label }}
+      </span>
+    </mat-checkbox>
+  </mat-list-item>
+</mat-list>
