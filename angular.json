@@ -305,6 +305,36 @@
           "style": "scss"
         }
       }
+    },
+    "todos-todos-ui": {
+      "projectType": "library",
+      "root": "libs/todos/todos-ui",
+      "sourceRoot": "libs/todos/todos-ui/src",
+      "prefix": "modern-web-nx-demo",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/todos/todos-ui/tsconfig.lib.json",
+              "libs/todos/todos-ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/todos/todos-ui/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/todos/todos-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

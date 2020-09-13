@@ -21,7 +21,8 @@
       ],
       "@modern-web-nx-demo/dashboard/dashboard-data-access": [
         "libs/dashboard/dashboard-data-access/src/index.ts"
-      ]
+      ],
+      "@modern-web-nx-demo/todos/todos-ui": ["libs/todos/todos-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
