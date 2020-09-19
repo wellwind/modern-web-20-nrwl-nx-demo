@@ -15,7 +15,7 @@ import { TodoItem } from '@modern-web-nx-demo/todos/todos-data-access';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodoListComponent implements OnInit {
-      @Input() todoList: TodoItem[];
+  @Input() todoList: TodoItem[];
 
   @Output() todoItemClick = new EventEmitter<TodoItem>();
 
