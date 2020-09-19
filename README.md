@@ -1,4 +1,4 @@
-# Modern Web 20 - Nrxl Nx 範例程式
+# Modern Web 20 - Nrwl Nx 範例程式
 
 ## Dependency Graph
 
